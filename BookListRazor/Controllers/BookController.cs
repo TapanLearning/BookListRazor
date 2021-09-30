@@ -24,6 +24,7 @@ namespace BookListRazor.Controllers
         {
             return Json(new { data = await _db.books.ToListAsync() });
         }
+        //deletes
 
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
